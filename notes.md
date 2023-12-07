@@ -80,4 +80,6 @@ The need for autoprefixing arises because different browsers may support a CSS p
 For example, consider the CSS property display: flex;, which is used to enable Flexbox layout. Different browsers might require different prefixes for this property:<br>
 WebKit-based browsers (Chrome, Safari): -webkit-<br>
 Mozilla Firefox: -moz-<br>
-Microsoft Edge: -ms-
+Microsoft Edge: -ms-<br><br>
+
+use *npm audit* to check for security vulnerabilities among the packages and *npm audit fix* to fix them unsless a manual review is needed.
