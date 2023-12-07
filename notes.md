@@ -56,7 +56,7 @@ Inclusive cards -- https://inclusive-components.design/cards/
 -------------------------------------------------------------------------------------------------
 The Gulp workflow is useful for possible future mantainance-related issues with scss
 install gulp using *npm install gulp-cli -g* -g ensures that the installation is global so that gulp can be used from any folder
-for this project we run *npm install @babel/core @babel/preset-env postcss autoprefixer browsers-sync cssnano dart-sass gulp gulp-babel gulp-postcss gulp-sass gulp-terser*
+for this project we run *npm install @babel/core @babel/preset-env postcss autoprefixer browsers-sync cssnano dart-sass gulp gulp-babel gulp-postcss gulp-sass gulp-terser sass*
 where:
 <br>
 @babel/core: Core functionality for Babel, a JavaScript compiler that allows you to use next-generation JavaScript features in your code.<br>
@@ -71,6 +71,7 @@ gulp-babel: A Gulp plugin for transpiling JavaScript using Babel.<br>
 gulp-postcss: A Gulp plugin for running PostCSS tasks.<br>
 gulp-sass: a Gulp plugin that allows you to compile Sass or SCSS files into regular CSS.<br>
 gulp-terser: to optimize and minify Javascript.<br>
+sass: sass itself
 <br>
 "Transpiling"<br>
 is a term that combines "transform" and "compile." It refers to the process of taking source code written in one programming language (often a newer or alternative version) and converting it into equivalent code in another language, typically an older version or a more widely supported format.
