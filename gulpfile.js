@@ -18,14 +18,14 @@ const browsersync = require('browser-sync').create();
 // Sass Task
 function scssTask() {
   return src('app/scss/style.scss', { sourcemaps: true }) //sourcemaps is useful when debugging, because inspecting through the browser will show the original Sass, instead of Css. This way we will have a sourcemap file at debugging time.
-    .pipe(sass())
-    .pipe(postcss([autoprefixer(), cssnano()]))
-    .pipe(dest('dist', { sourcemaps: '.' }));
+    .pipe(sass()) // compiles Sass to CSS
+    .pipe(postcss([autoprefixer(), cssnano()])) // intuitive
+    .pipe(dest('dist', { sourcemaps: '.' })); //destination of the mentioned sourcemaps files
 }
 
 // JavaScript Task
 function jsTask() {
-  return src('app/js/script.js', { sourcemaps: true })
+  return src('app/js/script.js', { sourcemaps: true }) // similar to before
     .pipe(babel({ presets: ['@babel/preset-env'] }))
     .pipe(terser())
     .pipe(dest('dist', { sourcemaps: '.' }));
@@ -61,7 +61,7 @@ function watchTask() {
 }
 
 // Default Gulp Task
-exports.default = series(scssTask, jsTask, browserSyncServe, watchTask);
+exports.default = series(scssTask, jsTask, browserSyncServe, watchTask); // which functions gulp will call when run without arguments
 
 // Build Gulp Task
-exports.build = series(scssTask, jsTask);
+exports.build = series(scssTask, jsTask); // which functions "gulp build" will call when run
