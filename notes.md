@@ -58,26 +58,26 @@ The Gulp workflow is useful for possible future mantainance-related issues with 
 install gulp using *npm install gulp-cli -g* -g ensures that the installation is global so that gulp can be used from any folder
 for this project we run *npm install @babel/core @babel/preset-env postcss autoprefixer browsers-sync cssnano dart-sass gulp gulp-babel gulp-postcss gulp-sass gulp-terser*
 where:
-
-@babel/core: Core functionality for Babel, a JavaScript compiler that allows you to use next-generation JavaScript features in your code.
-@babel/preset-env: A Babel preset that enables the use of the latest ECMAScript features based on the environments you are targeting.
-postcss: A tool for transforming styles with JavaScript plugins, often used for tasks like autoprefixing and minification.
-autoprefixer: A PostCSS plugin that adds vendor prefixes to your CSS to ensure cross-browser compatibility.
-browser-sync: A tool for live-reloading and synchronizing browsers during development.
-cssnano: A PostCSS plugin that optimizes and minifies CSS.
-dart-sass: Dart Sass, the Dart implementation of Sass, which is a popular CSS preprocessor.
-gulp: A task runner that allows you to automate various tasks in your development workflow.
-gulp-babel: A Gulp plugin for transpiling JavaScript using Babel.
-gulp-postcss: A Gulp plugin for running PostCSS tasks.
-gulp-sass: a Gulp plugin that allows you to compile Sass or SCSS files into regular CSS.
-gulp-terser: to optimize and minify Javascript.
-
-"Transpiling"
+<br>
+@babel/core: Core functionality for Babel, a JavaScript compiler that allows you to use next-generation JavaScript features in your code.<br>
+@babel/preset-env: A Babel preset that enables the use of the latest ECMAScript features based on the environments you are targeting.<br>
+postcss: A tool for transforming styles with JavaScript plugins, often used for tasks like autoprefixing and minification.<br>
+autoprefixer: A PostCSS plugin that adds vendor prefixes to your CSS to ensure cross-browser compatibility.<br>
+browser-sync: A tool for live-reloading and synchronizing browsers during development.<br>
+cssnano: A PostCSS plugin that optimizes and minifies CSS.<br>
+dart-sass: Dart Sass, the Dart implementation of Sass, which is a popular CSS preprocessor.<br>
+gulp: A task runner that allows you to automate various tasks in your development workflow.<br>
+gulp-babel: A Gulp plugin for transpiling JavaScript using Babel.<br>
+gulp-postcss: A Gulp plugin for running PostCSS tasks.<br>
+gulp-sass: a Gulp plugin that allows you to compile Sass or SCSS files into regular CSS.<br>
+gulp-terser: to optimize and minify Javascript.<br>
+<br>
+"Transpiling"<br>
 is a term that combines "transform" and "compile." It refers to the process of taking source code written in one programming language (often a newer or alternative version) and converting it into equivalent code in another language, typically an older version or a more widely supported format.
-
-"Autoprefixing"
+<br><br>
+"Autoprefixing"<br>
 The need for autoprefixing arises because different browsers may support a CSS property or feature, but they might require different vendor-specific prefixes to apply that feature. Some common vendor prefixes include -webkit-, -moz-, and -ms-. Autoprefixing simplifies the task of writing cross-browser-compatible CSS by automatically adding these prefixes based on the specified rules and the browsers you want to support.
-For example, consider the CSS property display: flex;, which is used to enable Flexbox layout. Different browsers might require different prefixes for this property:
-WebKit-based browsers (Chrome, Safari): -webkit-
-Mozilla Firefox: -moz-
+For example, consider the CSS property display: flex;, which is used to enable Flexbox layout. Different browsers might require different prefixes for this property:<br>
+WebKit-based browsers (Chrome, Safari): -webkit-<br>
+Mozilla Firefox: -moz-<br>
 Microsoft Edge: -ms-
