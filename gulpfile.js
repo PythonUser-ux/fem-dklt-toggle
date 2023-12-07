@@ -1,6 +1,10 @@
+// This file configures gulp
+// This snippet will be run using the terminal, it is used to compile and minify the files
+
 // Initialize modules
 const { src, dest, watch, series } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+// The line above is a common pattern in JavaScript where a function is immediately invoked with another function as an argument. In this case, it's configuring the gulp-sass plugin to use Dart Sass.
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
@@ -13,7 +17,7 @@ const browsersync = require('browser-sync').create();
 
 // Sass Task
 function scssTask() {
-  return src('app/scss/style.scss', { sourcemaps: true })
+  return src('app/scss/style.scss', { sourcemaps: true }) //sourcemaps is useful when debugging, because inspecting through the browser will show the original Sass, instead of Css. This way we will have a sourcemap file at debugging time.
     .pipe(sass())
     .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(dest('dist', { sourcemaps: '.' }));
