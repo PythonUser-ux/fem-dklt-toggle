@@ -56,7 +56,7 @@ Inclusive cards -- https://inclusive-components.design/cards/
 -------------------------------------------------------------------------------------------------
 The Gulp workflow is useful for possible future mantainance-related issues with scss
 install gulp using *npm install gulp-cli -g* -g ensures that the installation is global so that gulp can be used from any folder
-for this project we run *npm install @babel/core @babel/preset-env postcss autoprefixer browsers-sync cssnano dart-sass gulp gulp-babel gulp-postcss gulp-sass gulp-terser sass*
+for this project we run *npm install @babel/core @babel/preset-env postcss autoprefixer browser-sync cssnano dart-sass gulp gulp-babel gulp-postcss gulp-sass gulp-terser sass*
 where:
 <br>
 @babel/core: Core functionality for Babel, a JavaScript compiler that allows you to use next-generation JavaScript features in your code.<br>
