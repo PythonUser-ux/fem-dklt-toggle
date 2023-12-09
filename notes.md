@@ -83,4 +83,4 @@ WebKit-based browsers (Chrome, Safari): -webkit-<br>
 Mozilla Firefox: -moz-<br>
 Microsoft Edge: -ms-<br><br>
 
-use *npm audit* to check for security vulnerabilities among the packages and *npm audit fix* to fix them unsless a manual review is needed.
+use *npm audit* to check for security vulnerabilities among the packages and *npm audit fix* to fix them unless a manual review is needed.
